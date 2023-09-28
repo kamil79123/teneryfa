@@ -8,24 +8,19 @@
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
-    <title>Boska Teneryfa</title>
+    <title>Teneryfa w pigułce</title>
   </head>
   <body>
     <div class="container"> <!-- container glowny -->
-      <div class="row">
-        <div class="col-12 header-div">
-          <h1 class="text-center">Teneryfa w pigułce</h1>
-        </div>
-        </div>
-        <div class="row text-center sticky-top">
-          <div class="col-4 menu-square">
-            <a href="#plan">Plan wycieczki</a>
+        <div class="row text-center sticky-top" id="navbarek">
+          <div class="col-4 menu-square" id="sq1" onclick="jump(1)">
+            <p>Plan wycieczki</p>
           </div>
-          <div class="col-4 menu-square">
-            <a href="#godziny">Godziny otwarcia</a>
+          <div class="col-4 menu-square" id="sq2" onclick="jump(2)">
+            <p>Pro tipy</p>
           </div>
-          <div class="col-4 menu-square">
-            <a href="#trasy">Trasy</a>
+          <div class="col-4 menu-square" id="sq3" onclick="jump(3)">
+            <p>Trasy</p>
           </div>
         </div>
         <div class="row">
@@ -36,7 +31,7 @@
 </script>
           </div>
         </div>
-        <div class="row card2"> <!-- Plan podrozy-->
+        <div class="row card2" id="1"> <!-- Plan podrozy-->
           <div class="col-12 text-center">
             <h2>05.10.2023 - Czwartek</h2>
   <p>
@@ -78,6 +73,8 @@
             <h2>08.10.2023 - Niedziela</h2>
             <p>Miejmy nadzieję Wąwóz Masca</p>
             <p>Parking Wąwóz Masca <a href="https://maps.app.goo.gl/RVxYsEDeq66WnxSX7">[ADRES1] </a><a href="https://maps.app.goo.gl/aDnqByHTAzXmZaiY7">[ADRES2] </a><a href="https://maps.app.goo.gl/DoEFvFtjUSdH3RwD9">[ADRES3]</a></p>
+            <p>Kameralny basen wulkaniczny, podobno z kolorowymi rybkami <a href="https://maps.app.goo.gl/Ve8c1HQzLXuWmPLo9">[TRASA]</a></p>
+            <p>Icod de Los Vinos - Miasteczko słynące z lokalnego wina oraz drzewa smoczego <a href="https://maps.app.goo.gl/m2JV3RK4RMH71y7S6">[TRASA]</a></p>
           </div>
           <div class="col-12 text-center">
             <h2>09.10.2023 - Poniedziałek</h2>
@@ -134,12 +131,90 @@
             <p>01:10 Przylot</p>
           </div>
         </div>
+        <div class="row" id="2">
+          <div class="col-12 text-center card2">
+            <h2 id="pro">Porady</h2>
+            <p>Sjesta trwa od 13/14 do 17</p>
+            <p>Parkingi bez szlabanu są darmowe</p>
+            <p>Bilety na autobus kupujemy u kierowcy, płacąc za docelowy przystanek; Można też kupić kartkę Bono Bus, podobno nieco taniej</p>
+            <p>Do kierowcy autobusu machamy ręką, bo może się nie zatrzymać</p>
+            <p>Jeśli zwolni nam się czas, warto udać się na klify do Los Gigantes</p>
+            <p>Maksymalna prędkość na autostradach to 120 km/h</p>
+            <p>Nie parkować przy żółtych ani niebieskich liniach</p>
+            <p>Nie pić ani nie gotować wody z kranu</p>
+            <p>Napiwki w restauracjach 5-10%</p>
+            <p>Przy wynajmnie auta zbadać je dokładnie, zrobić zdjęcia ewentualnych uszkodzeń</p>
+          </div>
+          <div class="col-12 text-center card2">
+            <h2 id="pro">Przydatne zwroty po hiszpańsku</h2>
+            <p>Cześć - Hola</p>
+            <p>Dzień dobry - Buenos días</p>
+            <p>Dobry wieczór - Buenas tardes</p>
+            <p>Dobranoc - Buenas noches</p>
+            <p>Jak się masz? - ¿Cómo estás?</p>
+            <p>Dziękuję - Gracias</p>
+            <p>Proszę - Por favor</p>
+            <p>Przepraszam - Perdón</p>
+            <p>Do widzenia - Adiós</p>
+            <p>Tak - Sí</p>
+            <p>Nie - No</p>
+            <p>Przepraszam, czy mówisz po angielsku? - Disculpe, ¿hablas inglés?</p>
+          </div>
+          <div class="col-12 text-center card2">
+            <h2 id="pro">Popularne dania</h2>
+            <p>Barraquito - kawa z mlekiem skondensowanym, spienionym oraz z likierem</p>
+            <p>Papas arrugadas - ziemniaki w mundurkach</p>
+            <p>Sosy majos - czerwone (ostrzejsze) oraz zielone (łagodniejsze, na bazie kolendry)</p>
+            <p>Queso de cabra - Sery kozie</p>
+            <p>Gofio - prażone ziarna</p>
+            <p>Churrosy</p>
+            <p>Lemoniada z opuncji</p>
+            <p>Paella - owoce morza z ryżem</p>
+            <p>Garbanzos - gulasz z ciecierzycy</p>
+          </div>
+        </div>
+        <div class="row text-center" id="3">
+          <h2 id="trasy">Nasze trasy</h2>
+          <h4>05.10 Czwartek</h4>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d66987.88432636061!2d-16.66755137096622!3d28.066717101220803!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e0!4m5!1s0xc6a9f99a43507b5%3A0x8a9085b696593001!2sPort%20lotniczy%20Aeropuerto%20de%20Tenerife%20Sur%20(TFS)%2C%2038610%2C%20Santa%20Cruz%20de%20Tenerife%2C%20Hiszpania!3m2!1d28.0467575!2d-16.5725303!4m5!1s0xc6a99d3688eba69%3A0x59e1a11a31415059!2s7%20Calle%20Roque%20de%20Jama%2C%20Arona%2038650%2C%20Hiszpania!3m2!1d28.0551094!2d-16.7167386!5e0!3m2!1spl!2spl!4v1695926277873!5m2!1spl!2spl" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          <h4>06.10 Piątek</h4>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m34!1m12!1m3!1d267503.1953179225!2d-16.644750688141578!3d28.24594859090844!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m19!3e0!4m5!1s0xc6a99d3688eba69%3A0x59e1a11a31415059!2s7%20Calle%20Roque%20de%20Jama%2C%20Arona%2038650%2C%20Hiszpania!3m2!1d28.0551094!2d-16.7167386!4m5!1s0xc41cdeccdcfeaf5%3A0x54a9fe4642667870!2sSan%20Crist%C3%B3bal%20de%20La%20Laguna%2C%20Hiszpania!3m2!1d28.487400899999997!2d-16.3159061!4m5!1s0xc6a99d3688eba69%3A0x59e1a11a31415059!2s7%20C.%20Roque%20de%20Jama%2C%20Arona%2C%20Prowincja%20Santa%20Cruz%20de%20Tenerife%2038650%2C%20Hiszpania!3m2!1d28.0551094!2d-16.7167386!5e0!3m2!1spl!2spl!4v1695926496928!5m2!1spl!2spl" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          <h4>07.10 Sobota</h4>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m40!1m12!1m3!1d267470.47616693185!2d-16.59877099274171!3d28.258578941749082!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m25!3e0!4m5!1s0xc6a99d3688eba69%3A0x59e1a11a31415059!2s7%20Calle%20Roque%20de%20Jama%2C%20Arona%2038650%2C%20Hiszpania!3m2!1d28.0551094!2d-16.7167386!4m5!1s0xc6a62846a5f860b%3A0xece9e1aeb7cea23c!2sGarachico%2C%20Hiszpania!3m2!1d28.3732467!2d-16.7640103!4m5!1s0xc6a7ffa897afdb1%3A0xfe20ba57c9146376!2sPuerto%20de%20la%20Cruz%2C%20Hiszpania!3m2!1d28.411413!2d-16.5449611!4m5!1s0xc6a99d3688eba69%3A0x59e1a11a31415059!2sC.%20Roque%20de%20Jama%2C%207%2C%2038650%20Arona%2C%20Santa%20Cruz%20de%20Tenerife%2C%20Hiszpania!3m2!1d28.0551094!2d-16.7167386!5e0!3m2!1spl!2spl!4v1695926760085!5m2!1spl!2spl" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          <h4>08.10 Niedziela</h4>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m45!1m12!1m3!1d225014.4319435678!2d-16.91606197677175!3d28.211854402964807!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m30!3e0!4m5!1s0xc6a99d3688eba69%3A0x59e1a11a31415059!2s7%20Calle%20Roque%20de%20Jama%2C%20Arona%2038650%2C%20Hiszpania!3m2!1d28.0551094!2d-16.7167386!4m4!2s28.299651%2C-16.823957!3m2!1d28.299650999999997!2d-16.823957!4m5!1s0xc6a621f78137ce5%3A0xc20c2a77dce81aa2!2sCharco%20Los%20Chochos%2C%2039%2C%2C%20Carr.%20El%20Puertito%2C%2043%2C%2038479%20Los%20Silos%2C%20Santa%20Cruz%20de%20Tenerife%2C%20Hiszpania!3m2!1d28.3812318!2d-16.8145846!4m5!1s0xc6a87f97b43f08f%3A0x85f2317e2a72ca3!2sIcod%20de%20los%20Vinos%2C%20Prowincja%20Santa%20Cruz%20de%20Tenerife%2C%20Hiszpania!3m2!1d28.367143199999997!2d-16.7137571!4m5!1s0xc6a99d3688eba69%3A0x59e1a11a31415059!2sC.%20Roque%20de%20Jama%2C%207%2C%2038650%20Arona%2C%20Santa%20Cruz%20de%20Tenerife%2C%20Hiszpania!3m2!1d28.0551094!2d-16.7167386!5e0!3m2!1spl!2spl!4v1695927018066!5m2!1spl!2spl" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          <h4>09.10 Poniedziałek</h4>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m40!1m12!1m3!1d224817.3339178833!2d-16.61927250232259!3d28.305265093085623!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m25!3e0!4m5!1s0xc6a99d3688eba69%3A0x59e1a11a31415059!2s7%20Calle%20Roque%20de%20Jama%2C%20Arona%2038650%2C%20Hiszpania!3m2!1d28.0551094!2d-16.7167386!4m5!1s0xc41c91adfaf8a43%3A0x93339ab01a207040!2sLugar%20Cabezo%20Taganana%2C%201%2C%2038130%20Santa%20Cruz%20de%20Tenerife%2C%20Hiszpania!3m2!1d28.56067!2d-16.218239999999998!4m5!1s0xc41cceccc254171%3A0x43111473d277e52e!2sSanta%20Cruz%20De%20Tenerife%2C%20Hiszpania!3m2!1d28.463629599999997!2d-16.251846699999998!4m5!1s0xc6a99d3688eba69%3A0x59e1a11a31415059!2sC.%20Roque%20de%20Jama%2C%207%2C%2038650%20Arona%2C%20Santa%20Cruz%20de%20Tenerife%2C%20Hiszpania!3m2!1d28.0551094!2d-16.7167386!5e0!3m2!1spl!2spl!4v1695927064744!5m2!1spl!2spl" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          <h4>10.10 Wtorek</h4>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m46!1m12!1m3!1d224931.59400990553!2d-16.72699948209801!3d28.251220882541624!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m31!3e0!4m5!1s0xc6a99d3688eba69%3A0x59e1a11a31415059!2s7%20Calle%20Roque%20de%20Jama%2C%20Arona%2038650%2C%20Hiszpania!3m2!1d28.0551094!2d-16.7167386!4m5!1s0xc6a7fc6f1bca7a1%3A0x2d783f66b7a8b668!2sLoro%20Park%2C%20Avenida%20Loro%20Parque%2C%20Puerto%20de%20la%20Cruz%2C%20Hiszpania!3m2!1d28.408320099999997!2d-16.5647169!4m5!1s0xc6a7ffa897afdb1%3A0xfe20ba57c9146376!2sPuerto%20de%20la%20Cruz%2C%20Hiszpania!3m2!1d28.411413!2d-16.5449611!4m5!1s0xc6a7f269a8014cd%3A0xfe541720e79f7b44!2sElevador%20de%20agua%20de%20Gordejuela%2C%20C.%20Romantica%20Explanada%2C%2026%2C%2038418%20Los%20Realejos%2C%20Santa%20Cruz%20de%20Tenerife%2C%20Hiszpania!3m2!1d28.3986105!2d-16.585594!4m5!1s0xc6a99d3688eba69%3A0x59e1a11a31415059!2sC.%20Roque%20de%20Jama%2C%207%2C%2038650%20Arona%2C%20Santa%20Cruz%20de%20Tenerife%2C%20Hiszpania!3m2!1d28.0551094!2d-16.7167386!5e0!3m2!1spl!2spl!4v1695927122790!5m2!1spl!2spl" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          <h4>11.10 Środa</h4>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m46!1m12!1m3!1d224869.55098226384!2d-16.614472605093923!3d28.280545419616395!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m31!3e0!4m5!1s0xc6a99d3688eba69%3A0x59e1a11a31415059!2s7%20Calle%20Roque%20de%20Jama%2C%20Arona%2038650%2C%20Hiszpania!3m2!1d28.0551094!2d-16.7167386!4m5!1s0xc4026a87b7df08b%3A0x1f4718584f8bb76!2sAbades%2C%20Hiszpania!3m2!1d28.1442895!2d-16.4424057!4m5!1s0xc41ca38d1d9c17f%3A0x5694f9ae1bd14e6b!2sPlaya%20de%20Las%20Teresitas%2C%20Hiszpania!3m2!1d28.5097119!2d-16.1847441!4m5!1s0xc41cceccc254171%3A0x43111473d277e52e!2sSanta%20Cruz%20De%20Tenerife%2C%20Hiszpania!3m2!1d28.463629599999997!2d-16.251846699999998!4m5!1s0xc6a99d3688eba69%3A0x59e1a11a31415059!2sC.%20Roque%20de%20Jama%2C%207%2C%2038650%20Arona%2C%20Santa%20Cruz%20de%20Tenerife%2C%20Hiszpania!3m2!1d28.0551094!2d-16.7167386!5e0!3m2!1spl!2spl!4v1695927190949!5m2!1spl!2spl" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          <h4>12.10 Czwartek</h4>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m46!1m12!1m3!1d56337.33736766867!2d-16.72250789295568!3d28.052472350877945!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m31!3e0!4m5!1s0xc6a99d3688eba69%3A0x59e1a11a31415059!2s7%20Calle%20Roque%20de%20Jama%2C%20Arona%2038650%2C%20Hiszpania!3m2!1d28.0551094!2d-16.7167386!4m5!1s0xc6a9883cd37b2c7%3A0xa5324e9443aa4f28!2sFINCA%20TENERIFE%20DAISIES%20S.L.%2C%20del%20Sur%2C%20Av.%20la%20Calma%2C%20s%2Fn%2C%2038631%20La%20Estrella%2C%20Santa%20Cruz%20de%20Tenerife%2C%20Hiszpania!3m2!1d28.0169975!2d-16.6693383!4m5!1s0xc6aa205079565b9%3A0x6c35cd8f03954f23!2sPlaya%20Amarilla%2C%20Calle%20Aquiles%2C%20Hiszpania!3m2!1d28.0091127!2d-16.6386903!4m5!1s0xc6a97a4a7be5431%3A0x7670ba1923d8b392!2sCICAR%20Adeje%2C%20Centro%20Comercial%20The%20Duke%20Shops%2C%20Av.%20de%20Bruselas%2C%2038660%20Costa%20Adeje%2C%20Santa%20Cruz%20de%20Tenerife%2C%20Hiszpania!3m2!1d28.0918818!2d-16.7354061!4m5!1s0xc6a99d3688eba69%3A0x59e1a11a31415059!2sC.%20Roque%20de%20Jama%2C%207%2C%2038650%20Arona%2C%20Santa%20Cruz%20de%20Tenerife%2C%20Hiszpania!3m2!1d28.0551094!2d-16.7167386!5e0!3m2!1spl!2spl!4v1695927247070!5m2!1spl!2spl" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          <h4>13.10 Piątek</h4>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m40!1m12!1m3!1d14082.726327774537!2d-16.723683993076534!3d28.064745488825753!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m25!3e0!4m5!1s0xc6a99d3688eba69%3A0x59e1a11a31415059!2s7%20Calle%20Roque%20de%20Jama%2C%20Arona%2038650%2C%20Hiszpania!3m2!1d28.0551094!2d-16.7167386!4m5!1s0xc6a9761aa8b026d%3A0x50a9300dccee68f2!2sSiam%20Park%2C%20Avenida%20Siam%2C%20Costa%20Adeje%2C%20Hiszpania!3m2!1d28.072087999999997!2d-16.725585199999998!4m5!1s0xc6a9761d7193869%3A0x2462a5eb8cc2ec57!2sSiam%20Mall%2C%20Avenida%20Siam%2C%20Costa%20Adeje%2C%20Hiszpania!3m2!1d28.069035!2d-16.721425399999998!4m5!1s0xc6a99d3688eba69%3A0x59e1a11a31415059!2sC.%20Roque%20de%20Jama%2C%207%2C%2038650%20Arona%2C%20Santa%20Cruz%20de%20Tenerife%2C%20Hiszpania!3m2!1d28.0551094!2d-16.7167386!5e0!3m2!1spl!2spl!4v1695927327221!5m2!1spl!2spl" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          <h4>14.10 Sobota</h4>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m40!1m12!1m3!1d16748.71737201313!2d-16.718354606158016!3d28.05551010801547!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m25!3e0!4m5!1s0xc6a99d3688eba69%3A0x59e1a11a31415059!2s7%20Calle%20Roque%20de%20Jama%2C%20Arona%2038650%2C%20Hiszpania!3m2!1d28.0551094!2d-16.7167386!4m5!1s0xc6a9832076dc2d7%3A0x5b6860ad429f8362!2sTenerife%20Zoo%20Monkey%20Park%2C%20Tf662%20Km%202%2C%20Hiszpania!3m2!1d28.0604864!2d-16.692766!4m5!1s0xc6a99365754b2c9%3A0x6a03c9ad0e82bdd0!2sKismat%20Tandoori%20-%20Indian%20Restaurant%20Tenerife%2C%20Avenida%20%C3%81msterdam%2C%20Arona%2C%20Hiszpania!3m2!1d28.053033499999998!2d-16.7122346!4m5!1s0xc6a99d3688eba69%3A0x59e1a11a31415059!2sC.%20Roque%20de%20Jama%2C%207%2C%2038650%20Arona%2C%20Santa%20Cruz%20de%20Tenerife%2C%20Hiszpania!3m2!1d28.0551094!2d-16.7167386!5e0!3m2!1spl!2spl!4v1695927377049!5m2!1spl!2spl" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          <h4>15.10 Niedziela</h4>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m40!1m12!1m3!1d112553.55663250296!2d-16.797005712722623!3d28.16783167925292!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m25!3e0!4m5!1s0xc6a99d3688eba69%3A0x59e1a11a31415059!2s7%20Calle%20Roque%20de%20Jama%2C%20Arona%2038650%2C%20Hiszpania!3m2!1d28.0551094!2d-16.7167386!4m5!1s0xc6a841219a46745%3A0x8da5b0b3d4897f14!2sTeide%2C%20Hiszpania!3m2!1d28.2723384!2d-16.642508!4m5!1s0xc6a99cb5e20c235%3A0xc70a16b94033008d!2sTandoori%20Hut%20-%20Los%20Cristianos%2C%20Calle%20Juan%20Reveron%20Sierra%2C%20Edificio%20Bucanero%20Local%207%20Puerta%204%2C%20Los%20Cristianos%2C%20Hiszpania!3m2!1d28.0506504!2d-16.7158534!4m5!1s0xc6a99d3688eba69%3A0x59e1a11a31415059!2sC.%20Roque%20de%20Jama%2C%207%2C%2038650%20Arona%2C%20Santa%20Cruz%20de%20Tenerife%2C%20Hiszpania!3m2!1d28.0551094!2d-16.7167386!5e0!3m2!1spl!2spl!4v1695927416165!5m2!1spl!2spl" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <h4>16.10 Poniedziałek</h4>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d56335.8442972885!2d-16.6860663929372!3d28.055321748459612!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e0!4m5!1s0xc6a99d3688eba69%3A0x59e1a11a31415059!2s7%20Calle%20Roque%20de%20Jama%2C%20Arona%2038650%2C%20Hiszpania!3m2!1d28.0551094!2d-16.7167386!4m5!1s0xc6a9f99a43507b5%3A0x8a9085b696593001!2sPort%20lotniczy%20Aeropuerto%20de%20Tenerife%20Sur%20(TFS)%2C%20Hiszpania!3m2!1d28.0467575!2d-16.5725303!5e0!3m2!1spl!2spl!4v1695927462757!5m2!1spl!2spl" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
       </div>
     
 
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-
-    
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script>
+      function jump(x)
+      {
+        let tag = $("#"+x);
+        let h = $(window).height();
+        h = h / 100;
+    $('html,body').animate({scrollTop: tag.offset().top-8*h},'slow');
+      }
+      
+    </script>
   </body>
 </html>
