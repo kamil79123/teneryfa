@@ -12,6 +12,10 @@ body
     color: white;
     padding: 10px;
 }
+a
+{
+    text-decoration: none !important;
+}
 .menu-square > a
 {
     text-decoration: none !important;
@@ -28,8 +32,22 @@ body
 {
     margin-top: 15px;
     margin-bottom: 15px;
+    margin-left: 0px !important;
+    margin-right: 0px !important;
 }
 .card2
 {
     background: rgba(255,255,255, 0.5);
+    padding: 15px 0px 15px;
+}
+h2
+{
+    background-color: #1f557cde;
+    color: white;
+    padding: 10px;
+}
+.col-12
+{
+    padding-left: 0px !important;
+    padding-right: 0px !important;
 }
