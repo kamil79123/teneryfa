@@ -1,7 +1,7 @@
 body
 {
     background: url("bg2.jpg");
-    background-size: 100%;
+    background-size: cover;
     background-attachment: fixed;
     overflow-x: none;
     font-family: 'Inclusive Sans', sans-serif !important;
@@ -10,7 +10,7 @@ body
 }
 .header-div
 {
-    background: #1f567c;
+    background: #131224e5;
     color: white;
     padding: 10px;
 }
@@ -25,7 +25,7 @@ a
 }
 #sq1:hover
 {
-    background: #1f557c96;
+    background: #131224e5;
     opacity: 1 !important;
     visibility: visible;
     transition: all 0.5s ease-out;
@@ -57,7 +57,7 @@ a
 }
 .menu-square
 {
-    padding: 10px 40px 10px !important;
+    padding: 10px 10px 10px !important;
 
     cursor: pointer;
 }
@@ -81,7 +81,7 @@ a
 }
 h2
 {
-    background-color: #1f557cde;
+    background-color: #131224e5;
     color: white;
     padding: 10px;
     border-bottom-right-radius: 30px 20px;
@@ -95,8 +95,8 @@ h2
 }
 .weatherwidget-io
 {
-    border-bottom-right-radius: 30px 20px;
-    border-bottom-left-radius: 30px 20px;
+    border-bottom-right-radius: px 20px;
+    border-bottom-left-radius: 10px 20px;
 }
 #pro
 {
@@ -105,6 +105,15 @@ h2
 h4
 {
     text-align: center;
+    background: #a834eb;
+    padding: 15px 0px 15px;
+    color: white;
+    border-bottom-right-radius: 30px 20px;
+    border-bottom-left-radius: 30px 20px;
+}
+iframe
+{
+    margin: 15px 0px 15px;
 }
 #trasy
 {
@@ -112,10 +121,14 @@ h4
 }
 #navbarek
 {
-    background: rgb(31,86,124);
-background: linear-gradient(90deg, rgba(31,86,124,1) 0%, rgba(219,178,125,1) 50%, rgba(168,52,235,1) 100%);
+    background: rgb(19,18,36);
+background: linear-gradient(90deg, rgba(19,18,36,1) 0%, rgba(219,178,125,1) 50%, rgba(168,52,235,1) 100%);
 }
 .container
 {
     padding: 0px !important;
+}
+p
+{
+    padding: 0px 10px 0px;
 }
